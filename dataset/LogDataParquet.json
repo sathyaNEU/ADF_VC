@@ -15,10 +15,7 @@
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": {
-					"value": "@dataset().dynamic_file",
-					"type": "Expression"
-				},
+				"fileName": "Log.parquet",
 				"fileSystem": "parquet"
 			},
 			"compressionCodec": "snappy"
