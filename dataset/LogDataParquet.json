@@ -5,12 +5,20 @@
 			"referenceName": "AzureDataLakeStorage",
 			"type": "LinkedServiceReference"
 		},
+		"parameters": {
+			"dynamic_file": {
+				"type": "string"
+			}
+		},
 		"annotations": [],
 		"type": "Parquet",
 		"typeProperties": {
 			"location": {
 				"type": "AzureBlobFSLocation",
-				"fileName": "Log.parquet",
+				"fileName": {
+					"value": "@dataset().dynamic_file",
+					"type": "Expression"
+				},
 				"fileSystem": "parquet"
 			},
 			"compressionCodec": "snappy"

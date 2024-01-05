@@ -188,7 +188,10 @@
 				"outputs": [
 					{
 						"referenceName": "LogDataParquet",
-						"type": "DatasetReference"
+						"type": "DatasetReference",
+						"parameters": {
+							"dynamic_file": "Log.parquet"
+						}
 					}
 				]
 			}
