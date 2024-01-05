@@ -1,0 +1,17 @@
+{
+	"name": "CustomerPoolDBTable",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSynapseAnalytics",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "CustomerJSON"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

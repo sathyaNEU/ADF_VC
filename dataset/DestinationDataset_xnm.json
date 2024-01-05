@@ -1,0 +1,17 @@
+{
+	"name": "DestinationDataset_xnm",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureSynapseAnalytics",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "LogDataParquet"
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
