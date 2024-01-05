@@ -217,7 +217,7 @@
 				"typeProperties": {
 					"location": {
 						"type": "AzureBlobFSLocation",
-						"folderPath": "Customer",
+						"folderPath": "DimCustomer",
 						"fileSystem": "csv"
 					},
 					"columnDelimiter": ",",
